@@ -31,4 +31,9 @@ public function update(Request $request, Note $note)
   return back();
 
 }
+public function delete(Note $note)
+{
+  $note->delete();
+  return back();
+}
 }

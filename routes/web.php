@@ -26,5 +26,6 @@ Route::get('/games/{game}', 'GamesController@show');
 
 Route::post('games/{game}/notes', 'NotesController@store');
 Route::get('/notes/{note}/edit', 'NotesController@edit');
+Route::get('/notes/{note}/delete', 'NotesController@delete');
 Route::patch('notes/{note}', 'NotesController@update');
 });

@@ -11,6 +11,8 @@
     <li class="list-group-item">
 {{ $note->body }}
 <a href="#" class="pull-right"> {{ $note->user->name }}</a>
+<a href="/notes/{{ $note->id }}/delete" class="pull-right"> Delete </a>
+<a href="/notes/{{ $note->id }}/edit" class="pull-right"> Edit </a>
 </li>
   @endforeach
 </ul>
