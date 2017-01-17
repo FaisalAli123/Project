@@ -10,4 +10,12 @@ class HomeController extends Controller
   {
      return view('front.home');
   }
+  public function games()
+  {
+    return view('front.games');
+  }
+  public function game()
+  {
+    return view('front.game');
+  }
 }
