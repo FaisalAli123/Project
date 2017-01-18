@@ -48,38 +48,29 @@
       <!-- Portfolio Section -->
       <div class="row">
           <div class="col-lg-12">
-              <h2 class="page-header text-center">New Releases</h2>
+              <h2 class="page-header text-center">Games</h2>
           </div>
           <div class="col-md-4 col-sm-6">
-              <a href="portfolio-item.html">
-                  <img class="img-responsive img-portfolio img-hover" src="https://bendstudio.com/wp-content/uploads/2016/06/Days-Gone-E3-Key-Art-051916-02.jpg" alt="">
+            @forelse ($games->chunk(4) as $chunk)
+              @foreach($chunk as $game)
+                  <a href="{{route('game')}}">
+                  <h3>{{$game->name}}</h3>
+                  <h5>
+                    £{{$game->price}}
+                  </h5>
+                  <p>
+
+                  </p>
+                  <img class="img-responsive img-portfolio img-hover" src="{{url('images',$game->image)}}" alt="">
               </a>
           </div>
-          <div class="col-md-4 col-sm-6">
-              <a href="portfolio-item.html">
-                  <img class="img-responsive img-portfolio img-hover" src="http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/2016/12/14/dishonored-2-new-game-plus.jpg" alt="">
-              </a>
-          </div>
-          <div class="col-md-4 col-sm-6">
-              <a href="portfolio-item.html">
-                  <img class="img-responsive img-portfolio img-hover" src="https://i.ytimg.com/vi/V_BpILzH43I/maxresdefault.jpg" alt="">
-              </a>
-          </div>
-          <div class="col-md-4 col-sm-6">
-              <a href="portfolio-item.html">
-                  <img class="img-responsive img-portfolio img-hover" src="http://static4.gamespot.com/uploads/original/1197/11970954/3126129-horizonzerodawn_screens_septevent_3840x2160_01-2.jpg" alt="">
-              </a>
-          </div>
-          <div class="col-md-4 col-sm-6">
-              <a href="portfolio-item.html">
-                  <img class="img-responsive img-portfolio img-hover" src="https://media.playstation.com/is/image/SCEA/tom-clancys-ghost-recon-wildlands-listing-thumb-01-ps4-us-25may16?$Icon$" alt="">
-              </a>
-          </div>
-          <div class="col-md-4 col-sm-6">
-              <a href="portfolio-item.html">
-                  <img class="img-responsive img-portfolio img-hover" src="https://store.ubi.com/on/demandware.static/-/Sites-masterCatalog/default/dwf81111c9/images/large/57b30175ca1a6423718b4567-2.png" alt="">
-              </a>
-          </div>
+        @endforeach
+        @empty
+          <h3>No Games</h3>
+        @endforelse
+
+      </div>
+
       </div>
       <!-- /.row -->
 

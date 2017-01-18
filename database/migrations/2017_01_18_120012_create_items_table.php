@@ -19,7 +19,7 @@ class CreateItemsTable extends Migration
             $table->string('price');
             $table->string('edition');
             $table->string('description');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->integer('platform_id');
             $table->timestamps();
         });

@@ -8,7 +8,8 @@
             <li class="submenu">
                 <!-- Sub menu -->
                 <ul>
-                    <li><a href="{{route('admin.index')}}">Add Games</a></li>
+                    <li><a href="{{route('item.index')}}">Items</a>  </li>
+                    <li><a href="{{route('item.create')}}">Add Item</a></li>
                 </ul>
             </li>
         </ul>

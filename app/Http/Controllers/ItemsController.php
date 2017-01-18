@@ -15,7 +15,8 @@ class ItemsController extends Controller
      */
     public function index()
     {
-        //
+        $items=Item::all();
+        return view('admin.item.index',compact('items'));
     }
 
     /**
@@ -38,6 +39,15 @@ class ItemsController extends Controller
     public function store(Request $request)
     {
         $formInput=$request->except('image');
+//      validation for form
+        $this->validate($request,[
+          'name'=>'required',
+          'price'=>'required',
+          'edition'=>'required',
+        //  'platform'=>'required',
+          'description'=>'required',
+          'image'=>'image|mimes:png,jpeg,jpg|max:10000'
+        ]);
 //      image upload
         $image=$request->image;
         if($image){
