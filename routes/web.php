@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('/games', 'HomeController@games')->name('games');
-Route::get('/game', 'HomeController@game')->name('game');
+Route::get('/', 'FrontController@index')->name('home');
+Route::get('/games', 'FrontController@games')->name('games');
+Route::get('/game', 'FrontController@game')->name('game');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

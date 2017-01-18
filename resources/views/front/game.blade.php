@@ -15,16 +15,16 @@
             <p><strong>Stock Status : IN STOCK</strong></p><br />
             <h4>Price: £40.00</h4><br />
             <label>
-                          Select Platform
+                          Select Edition
                           <select>
-                              <option value="playstation4">
-                                  Playstation 4
+                              <option value="gameoftheyearedition">
+                                  Game Of The Year Edition
                               </option>
-                              <option value="xboxone">
-                                  Xbox One
+                              <option value="deluxeedition">
+                                  Deluxe Edition
                               </option>
-                              <option value="pc">
-                                  PC
+                              <option value="hardenededition">
+                                  Hardened Edition
                               </option>
 
                           </select>
