@@ -6,23 +6,38 @@
 <!-- Features Section -->
 <div class="row">
     <div class="col-lg-12">
-        <h2 class="page-header">Modern Business Features</h2>
+        <h2 class="page-header text-center">Battlefield 1</h2>
     </div>
     <div class="col-md-6">
-        <p>The Modern Business template by Start Bootstrap includes:</p>
+
         <ul>
-            <li><strong>Bootstrap v3.3.7</strong>
-            </li>
-            <li>jQuery v1.11.1</li>
-            <li>Font Awesome v4.2.0</li>
-            <li>Working PHP contact form with validation</li>
-            <li>Unstyled page elements for easy customization</li>
-            <li>17 HTML pages</li>
+          <h3>Product Description</h3><br />
+            <p><strong>Stock Status : IN STOCK</strong></p><br />
+            <h4>Price: £40.00</h4><br />
+            <label>
+                          Select Platform
+                          <select>
+                              <option value="playstation4">
+                                  Playstation 4
+                              </option>
+                              <option value="xboxone">
+                                  Xbox One
+                              </option>
+                              <option value="pc">
+                                  PC
+                              </option>
+
+                          </select>
+            </label>
+            <a href="#" class="btn btn-default">Buy Now</a><br /><br />
+            <p>Key Features</p>
+            <li>Epic 64-Player Multiplayer Battles - Team up with friends and join in the most epic multiplayer battles in FPS history with up to 64 players fighting as infantry or piloting vehicles ranging from tanks bikes on the ground to biplanes and gigantic battleships.</li>
+            <li>Experience the Dawn of All-out War - Be a part of the greatest battles ever known to man. From the heavily defended Alps to the scorching deserts of Arabia, waar is raging on an epic scale on land, air and sea as you witness the birth of modern warfare.</li>
+            <li>Earth-shattering Intuituve Destruction - With intuitive destruction, no battle is ever the same. Destroy vechicles big and small and demolish entire buildings. From tiny wooden houses to massive stone forts, even the grouds on which you're fighting can be blasted apart.</li>
         </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
     </div>
     <div class="col-md-6">
-        <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+        <br /><br /><br /><br /><img class="img-responsive" src="http://media1.gameinformer.com/filestorage/CommunityServer.Components.SiteFiles/imagefeed/featured/electronic-arts/battlefield/battlefield1/GasMask610.jpg" alt="">
     </div>
 </div>
 <!-- /.row -->
