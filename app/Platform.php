@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Platform extends Model
 {
-   protectd $fillable=['name'];
+   protected $fillable=['name'];
 
    public function items()
    {
