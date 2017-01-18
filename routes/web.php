@@ -20,5 +20,10 @@ Route::get('/games', 'FrontController@games')->name('games');
 Route::get('/game', 'FrontController@game')->name('game');
 
 Auth::routes();
-
+Route::get('/logout', 'Auth\LoginController@logout');
 Route::get('/home', 'HomeController@index');
+Route::group(['prefix' => 'admin', 'middleware'=>'auth'], function () {
+  Route::get('/', function () {
+    return view('admin.index');
+  })->name('admin.index');
+});
