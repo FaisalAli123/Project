@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Platform;
 use Illuminate\Http\Request;
 
 class PlatformsController extends Controller
@@ -13,7 +13,8 @@ class PlatformsController extends Controller
      */
     public function index()
     {
-        //
+        $platforms=Platform::all();
+        return view('admin.platform.index',compact('platforms'));
     }
 
     /**
@@ -34,7 +35,8 @@ class PlatformsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Platform::create($request->all());
+        return back();
     }
 
     /**

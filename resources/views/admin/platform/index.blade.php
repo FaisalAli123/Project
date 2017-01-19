@@ -1,6 +1,6 @@
 @extends('admin.layout.admin')
 
-@section('body')
+@section('content')
 <div class="navbar">
   <a class="navbar-brand" href="#">Platforms</a>
   <ul class="nav navbar-nav">
@@ -17,14 +17,11 @@
   @endif
   </ul>
 
-  <a class="btn btn-primary" data-toggle="modal" href="#modal-id">Add Platform</a>
-  <div class="modal fade" id="modal-id">
+  <a class="btn btn-primary" data-toggle="modal" href="#platform">Add Platform</a>
+  <div class="modal fade" id="platform">
     <div class="modal-dialog">
-      
+
       {!! Form::open(['route' => 'platform.store', 'method' => 'post']) !!}
-
-      {!! Form::close() !!}
-
 
       <div class="modal-content">
         <div class="modal-header">
@@ -32,15 +29,22 @@
           <h4 class="modal-title">Add Platform</h4>
         </div>
         <div class="modal-body">
-          Modal body ...
+          <div class="form-group">
+            {{ Form::label('name', 'Name') }}
+            {{ Form::text('name', null, array('class' => 'form-control'))}}
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save Changes</button>
+          <button type="submit" class="btn btn-primary">Save Changes</button>
         </div>
+        {!! Form::close() !!}
       </div>
     </div>
   </div>
 
 </div>
+
+
+@endif
 @endsection
