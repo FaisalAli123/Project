@@ -7,7 +7,7 @@
   @if(!empty($platforms))
     @forelse ($platforms as $platform)
       <li>
-        <a href="#">{{$platform->name}}</a>
+        <a href="{{route('platform.show',$platform->id)}}">{{$platform->name}}</a>
       </li>
     @empty
     <li>
@@ -44,7 +44,28 @@
   </div>
 
 </div>
-
+@if(!empty($items))
+  <section>
+    <h3>Items</h3>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Items</th>
+        </tr>
+      </thead>
+      <tbody>
+        @forelse($items as $item)
+        <tr>
+          <td>{{$item->name}}</td>
+        </tr>
+      @empty
+        <tr><td>
+          No Data
+        </td></tr>
+      @endforelse
+      </tbody>
+    </table>
+  </section>
 
 @endif
 @endsection

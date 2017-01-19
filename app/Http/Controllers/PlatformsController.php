@@ -47,7 +47,10 @@ class PlatformsController extends Controller
      */
     public function show($id)
     {
-        //
+      $items=Platform::find($id)->items;
+
+      $platforms=Platform::all();
+      return view('admin.platform.index',compact(['platforms','items']));
     }
 
     /**
