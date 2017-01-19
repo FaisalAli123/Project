@@ -47,7 +47,7 @@
 
       <!-- Portfolio Section -->
       <div class="row">
-          <div class="col-lg-12">
+          
               <h2 class="page-header text-center">Games</h2>
           </div>
           <div class="col-md-4 col-sm-6">
@@ -58,10 +58,7 @@
                   <h5>
                     £{{$game->price}}
                   </h5>
-                  <p>
-
-                  </p>
-                  <img class="img-responsive img-portfolio img-hover" src="{{url('images',$game->image)}}" alt="">
+                  <img style="width:300px; height:170px;" class="img-responsive img-portfolio img-hover" src="{{url('images',$game->image)}}" alt="">
               </a>
           </div>
         @endforeach
@@ -71,7 +68,7 @@
 
       </div>
 
-      </div>
+
       <!-- /.row -->
 
       <hr>
