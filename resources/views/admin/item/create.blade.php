@@ -2,9 +2,9 @@
 
 @section('content')
 
-<h2 style="margin-right:270px;">Add Item </h2><br /><br />
+<h2 style="margin-left: 150px;">Add Item </h2><br /><br />
 
-<div class="row" style="margin-right:340px;" >
+<div class="row" style="margin-right:;" >
 
   <div class="col-md-8 col-md-offset-3">
 

@@ -19,7 +19,7 @@
     @endif
 
     <div class="row">
-        @include('admin.layout.includes.sidenav')
+        
         <div class="col-md-10 display-area">
             <div class="row text-center">
                 <div class="col-md-10 col-md-offset-1">

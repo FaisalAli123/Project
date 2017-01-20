@@ -16,6 +16,18 @@
                                 </ul>
                             </li>
                         </ul>
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <b
+                                            class="caret"></b></a>
+
+                                <ul class="dropdown-menu animated fadeInUp">
+                                    <li><a href="{{route('item.index')}}">Items</a></li>
+                                    <li><a href="{{route('item.create')}}">Add Items</a></li>
+                                    <li><a href="{{route('platform.index')}}">Plaforms</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
             </div>
