@@ -10,6 +10,7 @@
                 <ul>
                     <li><a href="{{route('item.index')}}">Items</a>  </li>
                     <li><a href="{{route('item.create')}}">Add Item</a></li>
+                    <li><a href="{{route('platform.index')}}">Platforms</a></li>
                 </ul>
             </li>
         </ul>
