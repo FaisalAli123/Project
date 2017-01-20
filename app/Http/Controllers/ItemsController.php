@@ -79,9 +79,11 @@ class ItemsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $item = Item::findOrFail($id);
+        $platforms = Platform::pluck('name','id');
+        return view ('admin.item.edit', compact('platforms','item'));
     }
-
+     
     /**
      * Update the specified resource in storage.
      *
@@ -91,7 +93,12 @@ class ItemsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $item = Item::findOrFail($id);
+
+        $input = $request->all();
+        $item->fill($input)->save();
+
+        return back();
     }
 
     /**
