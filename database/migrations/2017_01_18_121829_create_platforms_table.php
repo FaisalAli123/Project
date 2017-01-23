@@ -11,6 +11,7 @@ class CreatePlatformsTable extends Migration
      *
      * @return void
      */
+//create platforms table
     public function up()
     {
         Schema::create('platforms', function (Blueprint $table) {

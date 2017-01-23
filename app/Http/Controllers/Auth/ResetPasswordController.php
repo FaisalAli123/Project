@@ -25,6 +25,7 @@ class ResetPasswordController extends Controller
      *
      * @var string
      */
+     //once logged in go to admin page
     protected $redirectTo = '/admin';
 
     /**

@@ -11,6 +11,7 @@ class CreateItemsTable extends Migration
      *
      * @return void
      */
+// create items table
     public function up()
     {
         Schema::create('items', function (Blueprint $table) {
