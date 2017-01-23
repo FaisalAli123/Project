@@ -12,10 +12,13 @@
         @forelse ($games as $game)
               <a href="{{route('game')}}">
               <h3>{{$game->name}}</h3>
-              <h5>
+              <h5>{{$game->edition}}</h5>
+              <h5>{{$game->description}}</h5>
+              <h3>
                 £{{$game->price}}
-              </h5>
+              </h3>
               <img style="width:300px; height:170px;" class="img-responsive img-portfolio img-hover" src="{{url('images',$game->image)}}" alt="">
+              <a href="#" class="btn btn-default">Buy Now</a><br /><br />
           </a>
        </div>
 

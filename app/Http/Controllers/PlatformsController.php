@@ -11,6 +11,7 @@ class PlatformsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+//show all platforms in platform page
     public function index()
     {
         $platforms=Platform::all();
@@ -33,6 +34,7 @@ class PlatformsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+//create new platform
     public function store(Request $request)
     {
         Platform::create($request->all());
@@ -45,6 +47,7 @@ class PlatformsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+//show all platforms
     public function show($id)
     {
       $items=Platform::find($id)->items;

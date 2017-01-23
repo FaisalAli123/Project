@@ -51,11 +51,8 @@
                         <a href="{{route('games')}}">Games</a>
                     </li>
                     <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
+                        <a href="{{route('login')}}">Login</a>
+                    </li
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

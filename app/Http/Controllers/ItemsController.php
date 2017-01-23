@@ -13,6 +13,7 @@ class ItemsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+//display all items on items page
     public function index()
     {
         $items=Item::all();
@@ -24,6 +25,7 @@ class ItemsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+//create platform for game
     public function create()
     {
         $platforms=Platform::pluck('name','id');
@@ -77,13 +79,14 @@ class ItemsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+// edit a game
     public function edit($id)
     {
         $item = Item::findOrFail($id);
         $platforms = Platform::pluck('name','id');
         return view ('admin.item.edit', compact('platforms','item'));
     }
-     
+
     /**
      * Update the specified resource in storage.
      *
@@ -91,6 +94,7 @@ class ItemsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+//update new information for game
     public function update(Request $request, $id)
     {
         $item = Item::findOrFail($id);
@@ -107,6 +111,7 @@ class ItemsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+// delete a game
     public function destroy($id)
     {
         Item::destroy($id);
