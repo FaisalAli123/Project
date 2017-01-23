@@ -3,7 +3,7 @@
 @section('content')
 <!-- Start Navigation -->
 <div class="navbar">
-  <a class="navbar-brand" href="#">Platforms</a>
+
   <ul class="nav navbar-nav">
   @if(!empty($platforms))
     @forelse ($platforms as $platform)
@@ -19,7 +19,7 @@
   @endif
   </ul>
 <!-- Start Platform Section -->
-  <a class="btn btn-primary" data-toggle="modal" href="#platform">Add Platform</a>
+  <a style="margin-right:900px; margin-top:10px;"class="btn btn-default" data-toggle="modal" href="#platform">Add Platform</a>
   <div class="modal fade" id="platform">
     <div class="modal-dialog">
 
@@ -48,7 +48,7 @@
 </div>
 @if(!empty($items))
 <!-- Start Table Section -->
-  <section>
+  <section style="margin-right: -200px;">
     <h3>Items</h3>
     <table class="table table-hover">
       <thead>

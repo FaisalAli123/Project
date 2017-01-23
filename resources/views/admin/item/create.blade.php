@@ -3,7 +3,7 @@
 
 @section('content')
 <!-- form for admin to create new item -->
-<h2 style="margin-left: 150px;">Add Item </h2><br /><br />
+<h2 style="margin-left: 210px;">Add Item </h2><br /><br />
 
 <div class="row" style="margin-right:;" >
 

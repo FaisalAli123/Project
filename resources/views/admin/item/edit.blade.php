@@ -22,7 +22,7 @@
 
       <div class="form-group">
         {{ Form::label('edition', 'Edition') }}
-        {{ Form::select('edition', ['gameoftheyearedition' => 'Game Of The Year Edition', 'deluxeedition' => 'Deluxe Edition', 'hardenededition' => 'Hardened Edition'], null, ['class' => 'form-control']) }}
+        {{ Form::select('edition', ['Game Of The Year Edition' => 'Game Of The Year Edition', 'Deluxe Edition' => 'Deluxe Edition', 'Hardened Edition' => 'Hardened Edition'], null, ['class' => 'form-control']) }}
       </div>
 
       <div class="form-group">
