@@ -3,7 +3,7 @@
 @section('title','Platinum Games | Games')
 
 @section('content')
-<!-- Features Section -->
+<!-- Display G Section -->
 <div class="row">
     <div class="col-lg-12">
         <h2 class="page-header text-center">Battlefield 1</h2>

@@ -1,10 +1,10 @@
 @extends('layout.main')
 
 @section('content')
-  <!-- Page Content -->
+  <!-- Start Container -->
   <div class="container">
 
-      <!-- Marketing Icons Section -->
+      <!-- Start Info Section -->
       <div class="row">
           <div class="col-lg-12">
               <h1 class="page-header text-center">
@@ -42,32 +42,38 @@
 </div>
 </div>
 </div>
-      <!-- /.row -->
+</div>
+<!--End Info Section -->
 
-      <!-- Portfolio Section -->
-      <div class="row">
+<!-- Start Games Section -->
+<h2 class="page-header text-center">Games</h2>
+<div style="margin-left: 400px;" class="container">
 
-              <h2 class="page-header text-center">Games</h2>
-          </div>
+
+
+<div class="row">
+
           <div class="col-md-4">
+
             @forelse ($games->chunk(4) as $chunk)
               @foreach($chunk as $game)
                   <a href="{{route('game')}}">
-                  <h3>{{$game->name}}</h3>
-                  <h5>
+                  <h3 style="margin-left: -40px;"class="text-center">{{$game->name}}</h3>
+                  <h5 style="margin-left:-50px;"class="text-center">
                     £{{$game->price}}
                   </h5>
                   <img style="width:300px; height:170px;" class="img-responsive img-portfolio img-hover" src="{{url('images',$game->image)}}" alt="">
               </a>
 
+
         @endforeach
         @empty
           <h3>No Games</h3>
         @endforelse
-
-
       </div>
-    </div>
-    </div>
+      </div>
+</div>
 
+<!-- End Games Section -->
+<!-- End Container -->
 @endsection

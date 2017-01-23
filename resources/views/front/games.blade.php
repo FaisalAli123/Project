@@ -1,7 +1,7 @@
 @extends('layout.main')
 @section('title','Platinum Games | Games')
 @section('content')
-  <!-- Features Section -->
+  <!-- Display Games Section -->
   <div class="row">
       <div class="col-lg-12">
         @forelse ($games as $game)
@@ -23,7 +23,7 @@
           <br /><br /><img style="width:550px; height:300px;"class="img-responsive img-portfolio img-hover" src="{{url('images',$game->image)}}" alt="">
       </div>
   </div>
-  <!-- /.row -->
+  <!-- End Section -->
 
   <hr>
 
