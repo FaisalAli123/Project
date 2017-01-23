@@ -39,18 +39,17 @@
                   <div class="panel-body">
                       <p>Subject to availability, we will use reasonable endeavours to deliver the products you have ordered as sson as possible after you place your order, any in any event within 30 days. You shall be given an estimated time for delivery at the time your order is placed.</p>
 
-                  </div>
-              </div>
-          </div>
-      </div>
+</div>
+</div>
+</div>
       <!-- /.row -->
 
       <!-- Portfolio Section -->
       <div class="row">
-          
+
               <h2 class="page-header text-center">Games</h2>
           </div>
-          <div class="col-md-4 col-sm-6">
+          <div class="col-md-4">
             @forelse ($games->chunk(4) as $chunk)
               @foreach($chunk as $game)
                   <a href="{{route('game')}}">
@@ -60,18 +59,15 @@
                   </h5>
                   <img style="width:300px; height:170px;" class="img-responsive img-portfolio img-hover" src="{{url('images',$game->image)}}" alt="">
               </a>
-          </div>
+
         @endforeach
         @empty
           <h3>No Games</h3>
         @endforelse
 
+
       </div>
+    </div>
+    </div>
 
-
-      <!-- /.row -->
-
-      <hr>
-
-      <!-- Footer -->
 @endsection

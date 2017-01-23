@@ -51,6 +51,9 @@
                         <a href="{{route('games')}}">Games</a>
                     </li>
                     <li>
+                        <a href="{{route('admin.index')}}">Admin</a>
+                    </li>
+                    <li>
                         <a href="{{route('login')}}">Login</a>
                     </li
                 </ul>
@@ -107,6 +110,7 @@
         </footer>
 
     </div>
+  </div>
     <!-- /.container -->
 
     <!-- jQuery -->
