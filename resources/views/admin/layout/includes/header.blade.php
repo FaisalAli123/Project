@@ -1,11 +1,15 @@
 <div class="header">
+  <!-- Start Container -->
     <div class="container">
         <div class="row">
             <div class="col-md-2 pull-right">
+              <!-- Start Navigation -->
 
                     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
+                              <!-- Start Dropdown Nav-->
+
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{Auth::user()->name}} <b
                                             class="caret"></b></a>
 
@@ -16,6 +20,8 @@
                                 </ul>
                             </li>
                         </ul>
+                        <!-- End Dropdown Nav-->
+                        <!-- Start Dropdown Nav-->
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <b
@@ -28,9 +34,12 @@
                                 </ul>
                             </li>
                         </ul>
+                        <!-- End Dropdown Nav-->
                     </nav>
+                    <!-- Start Navigation -->
                 </div>
             </div>
         </div>
     </div>
+    <!-- End Container -->
 </div>

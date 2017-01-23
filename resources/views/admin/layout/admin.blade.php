@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Admin</title>
+    <title> Admin | Platinum Games </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{asset('css0/bootstrap.min.css')}}"/>

@@ -1,6 +1,7 @@
 @extends('admin.layout.admin')
 
 @section('content')
+<!-- Start Navigation -->
 <div class="navbar">
   <a class="navbar-brand" href="#">Platforms</a>
   <ul class="nav navbar-nav">
@@ -9,6 +10,7 @@
       <li>
         <a href="{{route('platform.show',$platform->id)}}">{{$platform->name}}</a>
       </li>
+<!-- If Empty Display 'No Data' -->
     @empty
     <li>
       No Data
@@ -16,7 +18,7 @@
     @endforelse
   @endif
   </ul>
-
+<!-- Start Platform Section -->
   <a class="btn btn-primary" data-toggle="modal" href="#platform">Add Platform</a>
   <div class="modal fade" id="platform">
     <div class="modal-dialog">
@@ -42,9 +44,10 @@
       </div>
     </div>
   </div>
-
+<!-- End Platform Section -->
 </div>
 @if(!empty($items))
+<!-- Start Table Section -->
   <section>
     <h3>Items</h3>
     <table class="table table-hover">
@@ -56,7 +59,7 @@
       <tbody>
         @forelse($items as $item)
         <tr>
-          <td>{{$item->name}}</td>
+          <td>{{$item->name}}</td><!-- Show Game Name Related To Its Platform -->
         </tr>
       @empty
         <tr><td>
@@ -66,6 +69,6 @@
       </tbody>
     </table>
   </section>
-
+<!-- End Table Section -->
 @endif
 @endsection
