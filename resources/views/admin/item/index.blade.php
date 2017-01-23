@@ -22,6 +22,8 @@
         <input class="btn btn-default" type="submit" value="Delete" />
       </form>
   </li>
+<!-- End Display-->
+<!-- If no games in database dislay 'no items' -->
 @empty
   <h3>No Items</h3>
 @endforelse

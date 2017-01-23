@@ -12,6 +12,7 @@
 <body>
 <!-- include header on admin pages -->
 @include('admin.layout.includes.header')
+<!-- Page Content-->
 <div class="page-content">
     @if(Session::has('message'))
         <div class="alert alert-info">
@@ -55,6 +56,6 @@
         });
     });
 </script>
-
+<!-- End JavaScript -->
 </body>
 </html>

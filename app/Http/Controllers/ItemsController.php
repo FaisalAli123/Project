@@ -50,6 +50,7 @@ class ItemsController extends Controller
           'description'=>'required',
           'image'=>'image|mimes:png,jpeg,jpg|max:10000'
         ]);
+//      end validation for form
 //      image upload
         $image=$request->image;
         if($image){
@@ -61,7 +62,7 @@ class ItemsController extends Controller
         Item::create($formInput);
         return redirect()->route('admin.index');
     }
-
+//end image upload
     /**
      * Display the specified resource.
      *

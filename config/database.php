@@ -25,7 +25,7 @@ return [
     | you may use many connections at once using the Database library.
     |
     */
-
+//using sqlite database
     'default' => env('DB_CONNECTION', 'sqlite'),
 
     /*
