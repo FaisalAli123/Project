@@ -1,7 +1,7 @@
 @extends('admin.layout.admin')
 
 @section('content')
-
+<!-- form for admin to edit a game-->
 <h2 style="margin-left: 150px;">Add Item </h2><br /><br />
 
 <div class="row" style="margin-right:;" >
@@ -9,7 +9,7 @@
   <div class="col-md-8 col-md-offset-3">
 
 {!! Form::model($item,['method' => 'PATCH', 'route' => ['item.update', $item->id ]]) !!}
-    
+
       <div class="form-group">
         {{ Form::label('name', 'Name') }}
         {{ Form::text('name', null, array('class' => 'form-control')) }}

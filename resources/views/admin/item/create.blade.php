@@ -2,7 +2,7 @@
 @extends('admin.layout.admin')
 
 @section('content')
-
+<!-- form for admin to create new item -->
 <h2 style="margin-left: 150px;">Add Item </h2><br /><br />
 
 <div class="row" style="margin-right:;" >

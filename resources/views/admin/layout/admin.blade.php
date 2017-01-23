@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{asset('css0/modern-business.css')}}"/>
 </head>
 <body>
+<!-- include header on admin pages -->
 @include('admin.layout.includes.header')
 <div class="page-content">
     @if(Session::has('message'))
@@ -19,7 +20,7 @@
     @endif
 
     <div class="row">
-        
+
         <div class="col-md-10 display-area">
             <div class="row text-center">
                 <div class="col-md-10 col-md-offset-1">
@@ -28,11 +29,11 @@
                     </div>
                 </div>
             </div>
-        </div><!--/Display area after sidenav-->
+        </div>
     </div>
 
 </div><!--/Page Content-->
-
+<!-- javascript for navigation bar -->
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script>

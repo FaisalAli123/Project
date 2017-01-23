@@ -1,7 +1,7 @@
 @extends('admin.layout.admin')
-    
-@section('content')
 
+@section('content')
+<!-- display all items in admin/item page -->
 <h2 style="margin-left:160px;">Items </h2><br /><br />
 
 <ul style="margin-left:100px;">
